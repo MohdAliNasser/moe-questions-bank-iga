@@ -30,6 +30,7 @@ export function ApiStack({ stack }: StackContext) {
   const api = new Api(stack, "Api", {
     defaults: {
       authorizer: "none",
+      payloadFormatVersion: "2.0", //AddByMoahmedAli
     },
     routes: {
       "GET /examForm/{id}": {
